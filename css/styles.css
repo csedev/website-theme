@@ -1,0 +1,468 @@
+/**
+ * @file
+ */
+/**
+ * Singularity 1.4.1
+ * Singularity is a next generation grid framework built from the ground up to be responsive.
+ */
+/**
+ * Breakpoint 2.7.1
+ * Breakpoint is a first-of-its-kind media query engine built to harness the power of Sass and Compass.
+ */
+/*
+ * Media queries
+ */
+/**
+ * Custom Stylesheets
+ */
+/**
+ * @file
+ */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.top-header {
+  width: 100%;
+  padding: 20px;
+}
+
+.site-branding {
+  float: left;
+}
+
+.primary-menu {
+  float: right;
+}
+
+.site-logo img {
+  width: 80px;
+}
+
+/**
+ * @file
+ * Singularity Grid System
+ * https://github.com/at-import/Singularity/wiki
+ */
+/**
+ * Main page content layout
+ */
+/**
+ * @file
+ * Singularity Grid System
+ * https://github.com/at-import/Singularity/wiki
+ */
+/*
+ * Responsive Grids
+ */
+header .layout-content {
+  -sgs-span-settings: ("span": 12, "location": 1, "grid": 12, "gutter": 0.3333333333, "style": "opposite", "start row": true, "end row": true, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+
+header .layout-content .four-eight-column .span-4 {
+  -sgs-span-settings: ("span": 4, "location": 1, "grid": 12, "gutter": 0.3333333333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+  width: 31.914893617%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none;
+}
+
+header .layout-content .four-eight-column .span-8 {
+  -sgs-span-settings: ("span": 8, "location": 5, "grid": 12, "gutter": 0.3333333333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+  width: 65.9574468085%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+
+header .layout-content .eight-four-column .span-8 {
+  -sgs-span-settings: ("span": 8, "location": 1, "grid": 12, "gutter": 0.3333333333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+  width: 65.9574468085%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none;
+}
+
+header .layout-content .eight-four-column .span-4 {
+  -sgs-span-settings: ("span": 4, "location": 9, "grid": 12, "gutter": 0.3333333333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+  width: 31.914893617%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+
+/*
+ * Visualizing Your Grids
+ * A simple mixin you can apply to any element to have a visualization of your grid built out using SVGs.
+ */
+header {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%3E%3Crect%20x%3D%220%25%22%20fill%3D%22%23eee%22%20width%3D%226%2E3829787234%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%226%2E3829787234%25%22%20fill%3D%22%23f2f2f2%22%20width%3D%222%2E1276595745%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%228%2E5106382979%25%22%20fill%3D%22%23eee%22%20width%3D%226%2E3829787234%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2214%2E8936170213%25%22%20fill%3D%22%23f2f2f2%22%20width%3D%222%2E1276595745%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2217%2E0212765957%25%22%20fill%3D%22%23eee%22%20width%3D%226%2E3829787234%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2223%2E4042553191%25%22%20fill%3D%22%23f2f2f2%22%20width%3D%222%2E1276595745%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2225%2E5319148936%25%22%20fill%3D%22%23eee%22%20width%3D%226%2E3829787234%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2231%2E914893617%25%22%20fill%3D%22%23f2f2f2%22%20width%3D%222%2E1276595745%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2234%2E0425531915%25%22%20fill%3D%22%23eee%22%20width%3D%226%2E3829787234%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2240%2E4255319149%25%22%20fill%3D%22%23f2f2f2%22%20width%3D%222%2E1276595745%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2242%2E5531914894%25%22%20fill%3D%22%23eee%22%20width%3D%226%2E3829787234%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2248%2E9361702128%25%22%20fill%3D%22%23f2f2f2%22%20width%3D%222%2E1276595745%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2251%2E0638297872%25%22%20fill%3D%22%23eee%22%20width%3D%226%2E3829787234%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2257%2E4468085106%25%22%20fill%3D%22%23f2f2f2%22%20width%3D%222%2E1276595745%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2259%2E5744680851%25%22%20fill%3D%22%23eee%22%20width%3D%226%2E3829787234%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2265%2E9574468085%25%22%20fill%3D%22%23f2f2f2%22%20width%3D%222%2E1276595745%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2268%2E085106383%25%22%20fill%3D%22%23eee%22%20width%3D%226%2E3829787234%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2274%2E4680851064%25%22%20fill%3D%22%23f2f2f2%22%20width%3D%222%2E1276595745%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2276%2E5957446809%25%22%20fill%3D%22%23eee%22%20width%3D%226%2E3829787234%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2282%2E9787234043%25%22%20fill%3D%22%23f2f2f2%22%20width%3D%222%2E1276595745%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2285%2E1063829787%25%22%20fill%3D%22%23eee%22%20width%3D%226%2E3829787234%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2291%2E4893617021%25%22%20fill%3D%22%23f2f2f2%22%20width%3D%222%2E1276595745%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2293%2E6170212766%25%22%20fill%3D%22%23eee%22%20width%3D%226%2E3829787234%25%22%20height%3D%22100%25%22%2F%3E%3C%2Fsvg%3E");
+}
+
+/**
+ * @file
+ * Singularity Grid System
+ * https://github.com/at-import/Singularity/wiki
+ */
+/*
+ * Responsive Grids
+ */
+main {
+  width: 1024px;
+  margin: 20px auto;
+}
+
+main .layout-content {
+  -sgs-span-settings: ("span": 12, "location": 1, "grid": 12, "gutter": 0.3333333333, "style": "opposite", "start row": true, "end row": true, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+
+main .layout-content .four-eight-column .span-4 {
+  -sgs-span-settings: ("span": 4, "location": 1, "grid": 12, "gutter": 0.3333333333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+  width: 31.914893617%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none;
+}
+
+main .layout-content .four-eight-column .span-8 {
+  -sgs-span-settings: ("span": 8, "location": 5, "grid": 12, "gutter": 0.3333333333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+  width: 65.9574468085%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+
+main .layout-content .eight-four-column .span-8 {
+  -sgs-span-settings: ("span": 8, "location": 1, "grid": 12, "gutter": 0.3333333333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+  width: 65.9574468085%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none;
+}
+
+main .layout-content .eight-four-column .span-4 {
+  -sgs-span-settings: ("span": 4, "location": 9, "grid": 12, "gutter": 0.3333333333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+  width: 31.914893617%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+
+/*
+ * Visualizing Your Grids
+ * A simple mixin you can apply to any element to have a visualization of your grid built out using SVGs.
+ * main {
+ * @include background-grid($color: #eee);
+ * }
+*/
+/**
+ * @file
+ * Singularity Grid System
+ * https://github.com/at-import/Singularity/wiki
+ */
+/*
+ * Responsive Grids
+ */
+footer {
+  margin: 0 auto;
+  background-color: #4A4A4A;
+}
+
+footer .layout-featured-content {
+  -sgs-span-settings: ("span": 3, "location": 1, "grid": 3, "gutter": 0.28, "style": "split", "start row": true, "end row": true, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": (null: null));
+  width: 92.7083333333%;
+  float: right;
+  margin-left: 0;
+  margin-right: 3.6458333333%;
+  clear: none;
+  margin: 20px auto;
+}
+
+footer .layout-featured-content .span-1-1 {
+  background-color: #D8D8D8;
+  height: 250px;
+  -sgs-span-settings: ("span": 1, "location": 1, "grid": 3, "gutter": 0.28, "style": "split", "start row": true, "end row": false, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": (null: null));
+  width: 26.0416666667%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 3.6458333333%;
+  clear: none;
+}
+
+footer .layout-featured-content .span-1-2 {
+  background-color: #D8D8D8;
+  height: 250px;
+  -sgs-span-settings: ("span": 1, "location": 2, "grid": 3, "gutter": 0.28, "style": "split", "start row": false, "end row": false, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": (null: null));
+  width: 26.0416666667%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 36.9791666667%;
+  clear: none;
+}
+
+footer .layout-featured-content .span-1-3 {
+  background-color: #D8D8D8;
+  height: 250px;
+  -sgs-span-settings: ("span": 1, "location": 3, "grid": 3, "gutter": 0.28, "style": "split", "start row": false, "end row": true, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": (null: null));
+  width: 26.0416666667%;
+  float: right;
+  margin-left: 0;
+  margin-right: 3.6458333333%;
+  clear: none;
+}
+
+footer .layout-content {
+  -sgs-span-settings: ("span": 5, "location": 1, "grid": 5, "gutter": 0.1, "style": "split", "start row": true, "end row": true, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": (null: null));
+  width: 98.1818181818%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0.9090909091%;
+  clear: none;
+  margin: 10px auto;
+}
+
+footer .layout-content .span-1-1 {
+  background-color: #151515;
+  height: 250px;
+  -sgs-span-settings: ("span": 1, "location": 1, "grid": 5, "gutter": 0.1, "style": "split", "start row": true, "end row": false, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": (null: null));
+  width: 18.1818181818%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0.9090909091%;
+  clear: none;
+}
+
+footer .layout-content .span-1-2 {
+  background-color: #151515;
+  height: 250px;
+  -sgs-span-settings: ("span": 1, "location": 2, "grid": 5, "gutter": 0.1, "style": "split", "start row": false, "end row": false, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": (null: null));
+  width: 18.1818181818%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 20.9090909091%;
+  clear: none;
+}
+
+footer .layout-content .span-1-3 {
+  background-color: #151515;
+  height: 250px;
+  -sgs-span-settings: ("span": 1, "location": 3, "grid": 5, "gutter": 0.1, "style": "split", "start row": false, "end row": false, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": (null: null));
+  width: 18.1818181818%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 40.9090909091%;
+  clear: none;
+}
+
+footer .layout-content .span-1-4 {
+  background-color: #151515;
+  height: 250px;
+  -sgs-span-settings: ("span": 1, "location": 4, "grid": 5, "gutter": 0.1, "style": "split", "start row": false, "end row": false, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": (null: null));
+  width: 18.1818181818%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 60.9090909091%;
+  clear: none;
+}
+
+footer .layout-content .span-1-5 {
+  background-color: #151515;
+  height: 250px;
+  -sgs-span-settings: ("span": 1, "location": 5, "grid": 5, "gutter": 0.1, "style": "split", "start row": false, "end row": true, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": (null: null));
+  width: 18.1818181818%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0.9090909091%;
+  clear: none;
+}
+
+/**
+ * @file
+ */
+/**
+ * Typography styles
+ */
+/**
+ * @file
+ */
+/**
+ * Components
+ */
+/*
+* @file
+* https://css-tricks.com/design-considerations-text-images/
+*/
+.darken {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/test/featured.jpg");
+}
+
+.floor-fade {
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6)), url("../images/test/featured.jpg");
+}
+
+/*
+ * Hero banner
+ * https://cloudfour.com/thinks/responsive-hero-images/
+ */
+.hero {
+  background-size: cover;
+  position: relative;
+  max-height: 500px;
+  width: 100%;
+}
+
+.hero .content {
+  text-align: center;
+  margin: 100px auto;
+  clear: both;
+}
+
+.hero .content h1 {
+  color: white;
+  text-shadow: 0 1px 0 black;
+}
+
+@media (min-width: 781px) {
+  .hero .dummy {
+    padding-top: 40%;
+  }
+}
+
+@media (min-width: 541px) and (max-width: 780px) {
+  .hero .dummy {
+    padding-top: 33.333%;
+  }
+}
+
+@media (max-width: 540px) {
+  .hero .dummy {
+    padding-top: 25%;
+  }
+}
+
+.background-color {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 4px 8px;
+  color: white;
+  margin: 0;
+  font: 14px Sans-Serif;
+}
+
+.padded-multiline span {
+  background-color: black;
+  color: #fff;
+  display: inline;
+  padding: 0.5rem;
+  /* Needs prefixing */
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+/*
+* @file
+* https://slideout.js.org/
+*/
+.slideout-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 256px;
+  min-height: 100vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  z-index: 0;
+  display: none;
+}
+
+.slideout-menu {
+  background-color: #1D1F20;
+}
+
+.slideout-menu ul.menu {
+  padding: 0;
+  margin: 10px 0;
+  list-style: none;
+  width: 100%;
+}
+
+.slideout-menu ul.menu li a {
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.slideout-menu ul.menu li a .is-active {
+  color: white;
+}
+
+.slideout-menu ul.menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.slideout-menu-left {
+  left: 0;
+}
+
+.slideout-menu-right {
+  right: 0;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+
+/**
+ * @file
+ */
+/**
+ * @file
+ */
+/**
+ * Multimedia styles
+ */
+/**
+ * @file
+ */

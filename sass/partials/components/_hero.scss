@@ -1,0 +1,81 @@
+/*
+* @file
+* https://css-tricks.com/design-considerations-text-images/
+*/
+
+
+.darken {
+  background-image:
+          linear-gradient(
+                          rgba(0, 0, 0, 0.7),
+                          rgba(0, 0, 0, 0.7)
+          ),
+          url('../images/test/featured.jpg');
+}
+
+.floor-fade {
+  background:
+          linear-gradient(
+                          to bottom,
+                          rgba(0, 0, 0, 0),
+                          rgba(0, 0, 0, 0.6)
+          ),
+          url('../images/test/featured.jpg');
+}
+
+
+/*
+ * Hero banner
+ * https://cloudfour.com/thinks/responsive-hero-images/
+ */
+.hero {
+  background-size: cover;
+  position: relative;
+  max-height:500px;
+  width:100%
+}
+
+.hero {
+  .content {
+    text-align: center;
+    margin: 100px auto;
+    clear: both;
+    h1 {
+      color: white;
+      text-shadow: 0 1px 0 black;
+    }
+  }
+  .dummy {
+    @include breakpoint($large) {
+      padding-top: 40%;
+    }
+    @include breakpoint($medium) {
+      padding-top: 33.333%;
+    }
+    @include breakpoint($small) {
+      padding-top: 25%;
+    }
+  }
+}
+
+
+.background-color {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 4px 8px;
+  color: white;
+  margin: 0;
+  font: 14px Sans-Serif;
+}
+
+.padded-multiline span {
+  background-color: black;
+  color: #fff;
+  display: inline;
+  padding: 0.5rem;
+  /* Needs prefixing */
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}

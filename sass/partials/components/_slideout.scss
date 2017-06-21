@@ -1,0 +1,64 @@
+/*
+* @file
+* https://slideout.js.org/
+*/
+
+.slideout-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 256px;
+  min-height: 100vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  z-index: 0;
+  display: none;
+}
+
+.slideout-menu {
+  background-color: #1D1F20;
+  ul.menu {
+    padding: 0;
+    margin: 10px 0;
+    list-style: none;
+    width: 100%;
+    li {
+      a {
+        padding: 10px 20px;
+        color: white;
+        text-decoration: none;
+        display: block;
+        .is-active {
+          color: white;
+        }
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+        }
+      }
+    }
+  }
+}
+
+.slideout-menu-left {
+  left: 0;
+}
+
+.slideout-menu-right {
+  right: 0;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}

@@ -1,0 +1,47 @@
+/**
+ * @file
+ * Singularity Grid System
+ * https://github.com/at-import/Singularity/wiki
+ */
+
+/*
+ * Responsive Grids
+ */
+
+header {
+
+  .layout-content {
+    @include add-grid(12);
+    @include add-gutter(1/3);
+    @include grid-span(12, 1);
+
+    .four-eight-column {
+      .span-4 {
+        @include grid-span(4, 1);
+      }
+      .span-8 {
+        @include grid-span(8, 5);
+      }
+    }
+
+    .eight-four-column {
+      .span-8 {
+        @include grid-span(8, 1);
+      }
+      .span-4 {
+        @include grid-span(4, 9);
+      }
+    }
+  }
+}
+
+
+
+/*
+ * Visualizing Your Grids
+ * A simple mixin you can apply to any element to have a visualization of your grid built out using SVGs.
+ */
+
+header {
+  @include background-grid($color: #eee);
+}

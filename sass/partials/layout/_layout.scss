@@ -1,0 +1,16 @@
+/**
+ * @file
+ * Singularity Grid System
+ * https://github.com/at-import/Singularity/wiki
+ */
+
+@include sgs-change('output', 'isolation');
+@include sgs-change('direction', 'ltr');
+@include sgs-change('debug', true);
+
+/**
+ * Main page content layout
+ */
+@import 'header';
+@import 'main';
+@import 'footer';
